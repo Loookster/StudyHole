@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
-$to = "filesadobe325@gmail.com";
+$to = "rogenangeles12@gmail.com";
 $subject= "Support Mail";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
 $headers = "From: noreply@studyhub.com" . "\r\n" .
@@ -11,5 +11,5 @@ $headers = "From: noreply@studyhub.com" . "\r\n" .
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
-
+header("Location:index.html");
 ?>
